@@ -1,0 +1,9 @@
+name: Main Workflow
+
+on:
+  push:
+    branches: [4.5]
+
+jobs:
+  run-linux-builds:
+    uses: ./.github/workflows/linux_builds.yml
